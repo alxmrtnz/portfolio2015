@@ -1,0 +1,44 @@
+header a {
+	color: $primary-color;
+}
+
+.nav__logo {
+	font-family: $default-sans-serif;
+	font-size: 2.625em;
+	font-weight: 900;
+	position: relative;
+	transition: all $base-transition-speed;
+
+
+	&:after {
+		background-color: $primary-color;
+		bottom: -3px;
+		content: '';
+		height:10px;
+		left: 0px;
+		position: absolute;
+		transition: all $base-transition-speed;
+		width: 100%;
+		z-index: -1;
+	}
+
+	&:hover {
+		color: $white;
+		&:after {
+			height:100%;
+		}
+	}
+}
+
+nav {
+	ul {
+		li {
+			display: block;
+			float: left;
+			font-family: $default-sans-serif;
+			font-size: 1.125rem;
+			list-style: none;
+			margin-left: 2.8125rem;
+		}
+	}
+}
